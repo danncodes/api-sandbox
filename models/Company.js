@@ -40,9 +40,10 @@ const companySchema = new Schema({
         }
     }],
     competitions: [{
-        competitor: String,
-        name: String,
-        permalink: String
+        competitor: {
+            name: String,
+            permalink: String
+        }
     }],
     providerships: [],
     total_money_raised: String,
